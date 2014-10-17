@@ -665,7 +665,7 @@ Não tenho a mínima ideia porque o JPA ainda pede para criarmos um persistence.
 
 src/main/resources/META-INF/services/javax.enterprise.inject.spi.Extension:
 
-``
+```
 com.wehavescience.cdi.extensions.StartupBeanExtension
 ```
 
@@ -711,7 +711,7 @@ Finalizando com a página JSF:
 
 Para rodar seu projeto utilizando o Gradle, é só, dentro do seu projeto, rodar o comando:
 
-````
+```
 gradle run
 ```
 
