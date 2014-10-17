@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Página de Cadastro</title>
+</h:head>
+<h:body>
+    <h:form>
+        <p:messages />
+
+        <h:panelGrid columns="2">
+            <h:outputText value="Nome: " />
+            <p:inputText value="#{personMBean.person.name}" />
+            <h:outputText value="E-mail: " />
+            <p:inputText value="#{personMBean.person.email}" />
+            <h:outputText value="Idade: " />
+            <p:inputText value="#{personMBean.person.age}" />
+            <h:outputText value="Informações " />
+            <p:inputText value="#{personMBean.person.information}" />
+        </h:panelGrid>
+
+        <p:commandButton value="Cadastrar!" action="#{personMBean.save}" ajax="false" />
+    </h:form>
+</h:body>
+</html>
